@@ -1,7 +1,11 @@
 import './About.css';
+import '../../Utils/Util.css';
 import ProgressBar from "@ramonak/react-progress-bar";
 
 import image from '../../media/About BiznesXpo_1.png';
+import svgWave1 from '../../bx-web-assets/svgs/Wave1.svg';
+import stripe from '../../bx-web-assets/svgs/yellow-strip-1.svg';
+import darkstripe from '../../bx-web-assets/svgs/dark-grey-strip-1.svg';
 
 export const About = () => {
     return (
@@ -15,11 +19,11 @@ export const About = () => {
 
                 <div className="text">
                     <h1>
-                        Next-generation social plartform for small businesses
+                        Next-generation <br/>social plartform <br/>for small businesses
                     </h1>
                     <p>
                         BiznesXpo provides a digital office for 
-                        small businesses to brand, find more customers & 
+                        small businesses <br/>to brand, find more customers & 
                         network. Anytime. Anywhere. Free!
                     </p>
                 </div>
@@ -36,6 +40,13 @@ export const About = () => {
             <h2 className='improving_odds'>
                 We are <br/>improving the odds <br/><span>of success for <br/>small businesses.</span>
             </h2>
+            {/* background lines */}
+            <img src={svgWave1} className='wave1' alt="waves1"/>
+            {/* yellow-strip */}
+            <img src={stripe} className='stripe' alt="stripe" />
+
+            {/* dark grey stripe */}
+            <img src={darkstripe} className='darkstripe' alt="stripe" />
         </section>
     );
 }

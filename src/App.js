@@ -1,4 +1,5 @@
 import './App.css';
+import './Utils/Util.css';
 import { About } from './Componts/About/About';
 import { Header } from './Componts/Header/Header';
 import { TheProblem } from './Componts/TheProblem/TheProblem';

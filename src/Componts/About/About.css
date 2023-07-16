@@ -1,6 +1,6 @@
 .about {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     padding-top: 20px;
     position: relative;
@@ -41,14 +41,15 @@
 }
 
 .text {
-    width: 40%;
     position: relative;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    margin-top: -150px;
+    justify-content: center;
+    align-items: flex-start;
     gap: 20px;
+    height: 50vh;
+    width: 50%;
+    margin-bottom: 50px;
 }
 
 .text h1 {
@@ -61,7 +62,7 @@
 
 .text p {
     font-size: .9em;
-    width: 65%;
+    width: 50%;
     line-height: 1.4;
     font-weight: 700;
     margin: 0;
@@ -85,13 +86,38 @@ div.pro {
 }
 
 .improving_odds {
-    font-size: 3em;
+    font-size: 4em;
     text-align: center;
     width: 40%;
-    margin: 150px auto;
-    font-weight: 400;
+    margin: 200px auto;
+    font-weight: lighter;
 }
 
 .improving_odds span {
-    font-weight: 700;
+    font-weight: bold;
+}
+
+.wave1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99.9%;
+    height: 1000px;
+    z-index: -1;
+}
+
+.stripe {
+    width: 350px;
+    height: 65vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.darkstripe {
+    height: 65vh;
+    position: absolute;
+    left: 0;
+    top: 800px;   
 }

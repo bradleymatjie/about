@@ -1,13 +1,10 @@
 import './Header.css';
-import logo from '../../media/logo.jpg';
+import logo from '../../bx-web-assets/svgs/bx_horizontal_logo_dark.svg';
 
 export const Header = () => {
     return (
         <header>
-            <div className="logo">
-                <img src={logo} alt="logo" />
-                <h2>biznes<span>xpo</span></h2>
-            </div>
+            <img src={logo} className="logo" alt="logo" />
             
             <nav>
                 <ul>
