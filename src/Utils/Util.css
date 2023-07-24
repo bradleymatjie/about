@@ -1,4 +1,9 @@
 @font-face {
     font-family: 'Lato';
-    src: url('../bx-web-assets//fonts/Lato-Black.ttf') format('');
+    src: url('../bx-web-assets//fonts/Lato-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Lato-regular';
+    src: url('../bx-web-assets/fonts/Lato-Regular.ttf');
 }

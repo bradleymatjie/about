@@ -1,0 +1,30 @@
+.mobileMenu {
+  background-color: #000402;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 10%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding-top: 30px;
+}
+
+.mobileMenu ul {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+}
+
+.mobileMenu li {
+  font-family: "Roboto Thin";
+  font-size: 1.7em;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid grey;
+  height: 40px;
+  line-height: 40px;
+}
