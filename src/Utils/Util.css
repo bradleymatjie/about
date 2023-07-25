@@ -7,3 +7,13 @@
     font-family: 'Lato-regular';
     src: url('../bx-web-assets/fonts/Lato-Regular.ttf');
 }
+
+@font-face {
+    font-family: 'Lato-light';
+    src: url('../bx-web-assets/fonts/Lato-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Lato-xtralight';
+    src: url('../bx-web-assets/fonts/Lato-ExtraLight.ttf');
+}
