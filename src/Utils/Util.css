@@ -17,3 +17,9 @@
     font-family: 'Lato-xtralight';
     src: url('../bx-web-assets/fonts/Lato-ExtraLight.ttf');
 }
+
+
+@font-face {
+    font-family: 'Lato-ExtraBold';
+    src: url('../bx-web-assets/fonts/Lato-ExtraBold.ttf');
+}

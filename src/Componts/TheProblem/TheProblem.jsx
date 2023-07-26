@@ -1,4 +1,5 @@
-import './TheProblem.css';
+import './TheProblem.scss';
+import '../../Utils/Util.css';
 
 import failLogo from '../../bx-web-assets/svgs/business-man-fail.svg';
 import covid from '../../bx-web-assets/svgs/virus-1.svg';
@@ -13,7 +14,9 @@ export const TheProblem = () => {
                 <div className='image_container'>
                     <img src={failLogo} alt="fail logo" />
                 </div>
+
                 <h3>More than</h3>
+                
                 <div>
                     <h1>9 out of every 10</h1>
                     <p>business starting today will be out of business within the next five years</p>
