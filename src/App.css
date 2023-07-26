@@ -1,3 +1,9 @@
 * {
     font-family: 'lato';
 }
+
+a {
+    text-decoration: none;
+    font-family: 'Lato-regular';
+    color: #252525;
+}

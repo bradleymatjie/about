@@ -5,6 +5,9 @@ import { Home } from './Componts/About/Home';
 import { Header } from './Componts/Header/Header';
 import { TheProblem } from './Componts/TheProblem/TheProblem';
 import { MobileMenu } from './Componts/MobileMenu/MobileMenu';
+import { Route, Routes } from 'react-router-dom';
+
+
 
 function App() {
   const [menuToggler, setMenuToggler] = useState(false);
@@ -16,7 +19,11 @@ function App() {
         menuTogglerValue={menuToggler} 
       />
       {menuToggler && <MobileMenu />}
-      <Home />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/TheProblem' element={<TheProblem />} />
+      </Routes>
+      {/* <Home /> */}
       {/* <TheProblem /> */}
     </div>
   );

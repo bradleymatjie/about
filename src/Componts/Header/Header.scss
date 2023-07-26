@@ -39,6 +39,8 @@
       &::after {
         content: '';
         display: block;
+        position: relative;
+        top: 4px;
         width: 0;
         height: 3px;
         background: #000;
@@ -54,6 +56,12 @@
   }
 }
 
+// Active nav link
+.active {
+  border-bottom: 4px solid #252525;
+  border-radius: 3px;
+  padding-bottom: 4px;
+}
 
 // logo image
 .header img {
