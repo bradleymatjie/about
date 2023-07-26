@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
+  // color: white;
   padding-top: 30px;
 }
 
@@ -20,11 +20,26 @@
 }
 
 .mobileMenu li {
-  font-family: "Roboto Thin";
+  font-family: 'Lato-regular';
   font-size: 1.7em;
   width: 100%;
   text-align: center;
   border-bottom: 1px solid grey;
   height: 40px;
   line-height: 40px;
+  color: lightgray;
+ 
+}
+
+.mobileMenu a {
+  text-decoration: none;
+  color: transparent;
+  color: lightgray;
+  opacity: .6;
+}
+
+.mobileMenu a.active {
+  border-bottom: none;
+  opacity: 1;
+  color: lightgray;
 }
