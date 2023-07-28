@@ -29,6 +29,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
 
     @media (min-width: 600px) {
         height: 500px;
@@ -95,13 +96,23 @@
     height: 10px;
     border-radius: 20px;
     background-color: lightgrey;
+    cursor: pointer;
+    transition: .5s all;
 }
 
-.progressBars .barOne {
+.progressBars > div:hover {
     width: 100px;
     height: 10px;
     border-radius: 20px;
     background-color: darkgrey;
+}
+
+.progressBars .active {
+    width: 100px;
+    height: 10px;
+    border-radius: 20px;
+    background-color: darkgrey;
+    border: none;
 }
 
 /* we are improving the odds */
@@ -117,14 +128,23 @@
     }
 }
 
+.images-container {
+    overflow: hidden;
+}
+
+.images-container > div {
+    transition: 1s all ease-in-out;
+}
+
 .images-container .first {
     width: 90%;
     height: 80%;
-    border: 1px solid black;
     border-radius: 20px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    border: none;
+    transition: 1s;
 }
 
 .images-container .second {
@@ -169,6 +189,11 @@
     top: 0;
     right: 0;
     z-index: -1;
+
+    @media (min-width: 1020px) {
+        width: 200px;
+        height: 300px;
+    }
 }
 
 .darkstripe {

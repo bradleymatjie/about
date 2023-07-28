@@ -13,11 +13,11 @@ export const Header = memo(({ menuTogglerFunction, menuTogglerValue }) => {
       <ul className='header-navItems'>
         <li><NavLink to="/">Home </NavLink></li>
         <li><NavLink to="/TheProblem">TheProblem</NavLink></li>
-        <li>Our Solution</li>
-        <li>Features</li>
-        <li>Technology</li>
-        <li>Team</li>
-        <li>ContactUs</li>
+        <li><NavLink to="/solution">Our Solution</NavLink></li>
+        <li><NavLink to="/features">Features</NavLink></li>
+        <li><NavLink to="/technology">Technology</NavLink></li>
+        <li><NavLink to="/team">Team</NavLink></li>
+        <li><NavLink to="/contactus">ContactUs</NavLink></li>
       </ul>
     </nav>
 
