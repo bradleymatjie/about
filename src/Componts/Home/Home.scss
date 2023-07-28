@@ -133,18 +133,24 @@
 }
 
 .images-container > div {
-    transition: 1s all ease-in-out;
-}
-
-.images-container .first {
-    width: 90%;
-    height: 80%;
-    border-radius: 20px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     border: none;
-    transition: 1s;
+    transition: 1s all;
+}
+
+.images-container .first {
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    // margin-bottom: 20px;
+}
+
+.images-container .first.toggled {
+    width: 90%;
+    height: 80%;
+    border-radius: 20px;
 }
 
 .images-container .second {
@@ -156,19 +162,30 @@
     position: absolute;
     border: none;
     z-index: -1;
-    margin-top: 20px;
+    margin-top: 30px;
+}
+
+.images-container .second.toggled {
+    width: 90%;
+    height: 80%;
+    z-index: 5;
 }
 
 .images-container .third {
     width: 70%;
     height: 80%;
-    border: 1px solid black;
     border-radius: 20px;
     background-color: lightgray;
     position: absolute;
     border: none;
     z-index: -5;
-    margin-top: 40px;
+    margin-top: 60px;
+}
+
+.images-container .third.toggled {
+    width: 90%;
+    height: 80%;
+    z-index: 5;
 }
 
 

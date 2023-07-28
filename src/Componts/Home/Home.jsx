@@ -2,6 +2,8 @@ import './Home.scss';
 import '../../Utils/Util.css';
 
 import firstImage from '../../media/first.png';
+import secondImage from '../../media/second.jpg';
+import thirdImage from '../../media/third.jpg';
 import svgWave1 from '../../bx-web-assets/svgs/Wave1.svg';
 import stripe from '../../bx-web-assets/svgs/yellow-strip-1.svg';
 import darkstripe from '../../bx-web-assets/svgs/dark-grey-strip-1.svg';
@@ -63,9 +65,9 @@ export const Home = () => {
         <section className='home'>
             <div className='home-hero'>
                 <div className="images-container">
-                    <div className={`first ${firstToggled ? 'toggled': ''}`} style={{backgroundImage: `url(${firstImage})`}}></div>
-                    <div className={`second ${firstToggled ? 'toggled': ''}`}></div>
-                    <div className={`third ${firstToggled ? 'toggled': ''}`}></div>
+                    <div className={`first ${firstToggled ? 'toggled': ''}`} style={{backgroundImage: `url(${firstToggled && firstImage})`}}></div>
+                    <div className={`second ${secondToggled ? 'toggled': ''}`} style={{backgroundImage: `url(${secondToggled && secondImage})`}}></div>
+                    <div className={`third ${thirdToggled ? 'toggled': ''}`} style={{backgroundImage: `url(${thirdToggled && thirdImage})`}}></div>
                 </div>
                 
                 <div className='home-hero_text'>
