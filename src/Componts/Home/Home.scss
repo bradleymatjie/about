@@ -144,6 +144,7 @@
     width: 80%;
     height: 80%;
     border-radius: 20px;
+    z-index: -5;
     // margin-bottom: 20px;
 }
 
@@ -151,6 +152,7 @@
     width: 90%;
     height: 80%;
     border-radius: 20px;
+    z-index: 5;
 }
 
 .images-container .second {
@@ -187,6 +189,7 @@
     height: 80%;
     z-index: 5;
 }
+
 
 
 
