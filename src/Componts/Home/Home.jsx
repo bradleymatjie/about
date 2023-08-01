@@ -16,6 +16,8 @@ export const Home = () => {
     const [FourthToggled, setFourthToggled] = useState(false);
     const [FifthToggled, setFifthToggled] = useState(false);
 
+    const [slideText, setSlideText] = useState(`Next-generation Social platform for small business`); 
+
     const FirstSlide = () => {
         setFirstToggled(prev => true);
 
@@ -23,6 +25,8 @@ export const Home = () => {
         setThirdToggled(prev => false);
         setFourthToggled(prev => false);
         setFifthToggled(prev => false);
+
+        setSlideText(prev => `Next-generation Social platform for small business`);
     }
 
     const secondSlide = () => {
@@ -32,6 +36,8 @@ export const Home = () => {
         setThirdToggled(prev => false);
         setFourthToggled(prev => false);
         setFifthToggled(prev => false);
+
+        setSlideText(prev => `Create your brand's digital office!`);
     }
 
     const ThirdSlide = () => {
@@ -41,6 +47,7 @@ export const Home = () => {
         setSecondToggled(prev => false);
         setFourthToggled(prev => false);
         setFifthToggled(prev => false);
+        setSlideText(prev => ` find solutions that help your business grow everyday`);
     }
 
     const FourthSlide = () => {
@@ -71,7 +78,7 @@ export const Home = () => {
                 </div>
                 
                 <div className='home-hero_text'>
-                    <h2>Next-generation<br/>Social platform<br/>for small business </h2>
+                    <h2>{slideText}</h2>
                     <p>BiznesXpo provides a digital office for small businesses to brand, find more customers & network. Anytime. Anywhere. Free!</p>
                 </div>
             </div>
