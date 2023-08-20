@@ -11,13 +11,18 @@ import { MobileMenu } from './Componts/MobileMenu/MobileMenu';
 function App() {
   const [menuToggler, setMenuToggler] = useState(false);
 
+  const removeMenu = () => {
+    setMenuToggler(prev => false);
+  }
+
+
   return (
     <div className="App">
       <Header 
         menuTogglerFunction={setMenuToggler} 
         menuTogglerValue={menuToggler} 
       />
-      {menuToggler && <MobileMenu />}
+      {menuToggler && <MobileMenu removeMenu={removeMenu} />}
       <Home />
       <TheProblem />
     </div>
