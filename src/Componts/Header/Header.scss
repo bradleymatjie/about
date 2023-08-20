@@ -47,7 +47,6 @@
         width: 0;
         height: 3px;
         background: #000;
-        border-radius: 20px;
         transition: width .5s;
       }
       
@@ -62,7 +61,6 @@
 // Active nav link
 .active {
   border-bottom: 4px solid #252525;
-  border-radius: 3px;
   padding-bottom: 4px;
 }
 
