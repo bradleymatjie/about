@@ -8,7 +8,7 @@ import leftWaves from '../../bx-web-assets/svgs/light-grey-strip-1.svg';
 
 export const TheProblem = () => {
     return (
-        <section className='TheProblem'>
+        <section className='TheProblem' id='TheProblem'>
             <h4>THE PROBLEM</h4>
             <div>
                 <div className='image_container'>

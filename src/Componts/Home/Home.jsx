@@ -69,7 +69,7 @@ export const Home = () => {
     }
 
     return (
-        <section className='home'>
+        <section className='home' id='home'>
             <div className='home-hero'>
                 <div className="images-container">
                     <div className={`first ${firstToggled ? 'toggled': ''}`} style={{backgroundImage: `url(${firstToggled && firstImage})`}}></div>

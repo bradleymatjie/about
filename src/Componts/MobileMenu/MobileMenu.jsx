@@ -1,20 +1,18 @@
-import { memo } from 'react';
 import './MobileMenu.scss';
 import '../../Utils/Util.css';
-import { NavLink } from 'react-router-dom';
 
-export const MobileMenu = memo(() => {
+export const MobileMenu = () => {
   return (
     <div className='mobileMenu'>
       <ul >
-        <li><NavLink to="/">Home </NavLink></li>
-        <li><NavLink to="/TheProblem">TheProblem</NavLink></li>
-        <li><NavLink to="/solution">Our Solution</NavLink></li>
-        <li><NavLink to="/features">Features</NavLink></li>
-        <li><NavLink to="/technology">Technology</NavLink></li>
-        <li><NavLink to="/team">Team</NavLink></li>
-        <li><NavLink to="/contactus">ContactUs</NavLink></li>
+        <li><a href="#home">Home </a></li>
+        <li><a href="#TheProblem">TheProblem</a></li>
+        <li><a href="#solution">Our Solution</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#technology">Technology</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contactus">ContactUs</a></li>
       </ul>
     </div>
   )
-})
+}
