@@ -12,7 +12,9 @@ export const Header = memo(({ menuTogglerFunction, menuTogglerValue }) => {
 
  return (
   <header className='header'>
-    <img src={logo} alt="logo" />
+    <a href="#home">
+      <img src={logo} alt="logo" />
+    </a>
 
     <nav>
       <ul className='header-navItems'>

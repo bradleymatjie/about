@@ -22,7 +22,7 @@ function App() {
         menuTogglerFunction={setMenuToggler} 
         menuTogglerValue={menuToggler} 
       />
-      {menuToggler && <MobileMenu removeMenu={removeMenu} />}
+      <MobileMenu removeMenu={removeMenu} menuToggler={menuToggler} />
       <Home />
       <TheProblem />
     </div>
