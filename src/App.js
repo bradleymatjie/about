@@ -19,12 +19,8 @@ function App() {
         menuTogglerValue={menuToggler} 
       />
       {menuToggler && <MobileMenu />}
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/TheProblem' element={<TheProblem />} />
-      </Routes>
-      {/* <Home /> */}
-      {/* <TheProblem /> */}
+      <Home />
+      <TheProblem />
     </div>
   );
 }

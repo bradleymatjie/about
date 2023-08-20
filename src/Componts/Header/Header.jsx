@@ -22,7 +22,7 @@ export const Header = memo(({ menuTogglerFunction, menuTogglerValue }) => {
     </nav>
 
     <div 
-      className={`toggle ${menuTogglerValue ? "active" : ""}`}
+      className={`toggle ${menuTogglerValue ? "toggled" : ""}`}
       onClick={() => {
         menuTogglerFunction((state) => (!state))
       }}

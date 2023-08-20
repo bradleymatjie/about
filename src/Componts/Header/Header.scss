@@ -118,16 +118,16 @@
   left: 10px;
 }
 
-.toggle.active span:nth-child(3) {
+.toggle.toggled span:nth-child(3) {
   transform: translateX(-50px);
 }
 
-.toggle.active span:nth-child(1) {
+.toggle.toggled span:nth-child(1) {
   width: 30px;
   transform: rotate(45deg);
 }
 
-.toggle.active span:nth-child(2) {
+.toggle.toggled span:nth-child(2) {
   width: 30px;
   transform: rotate(-45deg);
 }
