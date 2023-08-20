@@ -1,5 +1,6 @@
 * {
     font-family: 'lato';
+    scroll-behavior: smooth;
 }
 
 a {
