@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import './MobileMenu.scss';
-import '../../Utils/Util.css';
 
 export const MobileMenu = ({ removeMenu, menuToggler }) => {
   const [activeMenuItem, setActiveMenuItem] = useState('home');

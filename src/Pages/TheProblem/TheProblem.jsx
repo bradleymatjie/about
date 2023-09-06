@@ -1,5 +1,4 @@
 import './TheProblem.scss';
-import '../../Utils/Util.css';
 
 import failLogo from '../../bx-web-assets/svgs/business-man-fail.svg';
 import covid from '../../bx-web-assets/svgs/virus-1.svg';
