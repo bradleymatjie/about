@@ -1,14 +1,17 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import './home.scss';
+import wave from '../../bx-web-assets/svgs/Wave1.svg';
+import yellowstripe from '../../bx-web-assets/svgs/yellow-strip-1.svg';
+import greystripe from '../../bx-web-assets/svgs/dark-grey-strip-1.svg';
 
 export const Home = ({ data }) => {
   const [activeButtonIndex, setActiveButtonIndex] = useState(0);
   const [activNav, setActivNav] = useState(0);
   const [nextNav, setNextNav] = useState(1); 
-  const [showFourthDiv, setShowFourthDiv] = useState(true);
-  const [showThirdDiv, setShowThirdDiv] = useState(true);
   const [showSecondDiv, setShowSecondDiv] = useState(true);
+  const [showThirdDiv, setShowThirdDiv] = useState(true);
+  const [showFourthDiv, setShowFourthDiv] = useState(true);
 
   const handleButtonClick = (index) => {
     setActiveButtonIndex(index);
@@ -41,7 +44,7 @@ export const Home = ({ data }) => {
   };
 
   return (
-    <div className="home" id="home">
+    <div className="home" id="home" style={{backgroundImage: `url(${wave})`}}>
       <div className="main-area">
         <div className="image-section">
         <motion.img
@@ -80,8 +83,8 @@ export const Home = ({ data }) => {
           </motion.div>
 
           <motion.div
-            key={data[activNav].description} // Use the description as the key
-            variants={textVariants} // Animation variants
+            key={data[activNav].description}
+            variants={textVariants} 
             initial="hidden"
             animate="visible"
           >
@@ -101,6 +104,9 @@ export const Home = ({ data }) => {
           />
         ))}
       </nav>
+
+      <img src={yellowstripe} alt='yellow stripe' className="yellowstripe" />
+      <img src={greystripe} alt='dark grey stripe' className="greystripe" />
     </div>
   );
 };
